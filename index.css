@@ -177,6 +177,10 @@ hgroup{
     margin-bottom: 0.5em;
 }
 
+.wind-span {
+    padding-top: 0.25em;
+}
+
 
 @media(max-width: 400px){
 
