@@ -23,6 +23,9 @@
 .sub-container{
     border-radius: 1em;
     margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 
@@ -170,5 +173,4 @@ hgroup{
     }
 
 }
-
 
