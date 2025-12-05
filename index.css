@@ -151,17 +151,21 @@ hgroup{
     align-items: center;
     color: white;
     font-size: 1rem;
+    flex: 1;
+    text-align: center;
 }
 
 .extra-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-span {
-    margin-bottom: 0.75em;
+.extraInfo-container span {
+    font-size: 2rem;       /* normalize icons */
+    margin-bottom: 0.5em;
 }
+
 .info-bottom {
     margin-bottom: 0.5em;
 }
