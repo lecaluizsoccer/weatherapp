@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: solid black 2px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #469adf, #7ab5e6);
+}
+
+.main, .sub-container {
+    width: 95%;
+    margin: 1em auto;
+    background-image: linear-gradient(to right, #327dbb, #7ab5e6);
+    overflow: hidden;
+}
+.sub-container{
+    border-radius: 1em;
+    margin-top: 1em;
+
+}
+
+.main {
+    height: 20em;
+    background-color:#469adf;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    height: 50vh;
+    
+}
+
+.temp {
+    font-size: 3.5rem;
+}
+
+.weather {
+    font-size: 2.5rem;
+}
+
+.sub-container {
+    height: 50vh;
+}
+
+.unit-toggle {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8fc5f1;
+    width: 8em;
+    height: 3em;
+    padding: 0.25em;
+    border-radius: 4em;
+    margin: 1em 0 0 auto;
+    overflow: hidden;  
+}
+
+.celsius, .fahrenheit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    height: 100%;
+    border-radius: 50%;
+    font-size: 170%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fahrenheit {
+    background-color:white;
+    border: none;
+    color:#469adf;
+}
+
+.celsius {
+    background-color:  #8fc5f1;
+    border: none;
+    color:white;
+}
+
+#input-text {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em 0;
+    border-radius: 1.25em;
+    background-color:  #8fc5f1;
+    border: none;
+    color:white;
+    text-indent: 1em;
+    font-size: 1rem;
+    
+}
+input::placeholder {
+    text-indent: 0.75em;   /* looks like margin-left */
+    font-size: 1rem;
+    color:white;
+}
+
+hgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color:white;
+}
+
+.local {
+    align-self: self-start;
+    font-size: 1.5rem;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #77a9d1;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 2em 1em 0 1em;
+}
+
+.feel-container, .maxMin-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+
+}
+
+.extraInfo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+}
+
+
+@media(max-width: 400px){
+
+    .temp {
+        font-size: 2.25rem;
+    }
+
+    .weather {
+        font-size: 1.25rem;
+    }
+
+    .local {
+        font-size: 1rem;
+    }
+    .celsius .fahrenheit {
+        font-size: 90%;
+    }
+
+}
+
+
