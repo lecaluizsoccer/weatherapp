@@ -6,7 +6,8 @@
 
 .container {
     border: solid black 2px;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,17 +16,18 @@
 }
 
 .main, .sub-container {
-    width: 95%;
+    width: auto;
+    min-width: 95%;
     margin: 1em auto;
     background-image: linear-gradient(to right, #327dbb, #7ab5e6);
 }
 .sub-container{
     border-radius: 1em;
-    margin-top: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height:45vh;
+    height: auto;
+    min-height:45vh;
 }
 
 .main {
@@ -33,7 +35,8 @@
     padding: 1em;
     border-radius: 1em;
     border: none;
-    height: 45vh;
+    height: auto;
+    min-height: 45vh;
     
 }
 
@@ -50,19 +53,19 @@
     justify-content: space-between;
     background-color: #8fc5f1;
     width: 8em;
-    height: 3em;
+    height: auto;
+    min-height: 3em;
     padding: 0.25em;
     border-radius: 4em;
     margin: 1em 0 0 auto;
-    overflow: hidden;  
 }
 
 .celsius, .fahrenheit {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5em;
-    height: 100%;
+    width: auto;
+    min-width: 2em;
     border-radius: 50%;
     font-size: 170%;
     font-weight: 700;
@@ -81,7 +84,8 @@
 }
 
 #input-text {
-    width: 100%;
+    width: auto;
+    min-width: 100%;
     margin: 1em 0;
     padding: 1em 0;
     border-radius: 1.25em;
@@ -147,16 +151,11 @@ input::placeholder {
 
 }
 
-.extra-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
 .extraInfo-container span {
     font-size: 1.5rem; 
     margin-bottom: 0.5em;
-    width: 2em;
+    width: auto;
+    min-width: 2em;
     height: 2em;
     display: flex;
     justify-content: center;
